@@ -1,0 +1,11 @@
+.notFound {
+  color: #D42B29;
+  font-size: 30px;
+  text-align: center;
+  a {
+    line-height: 250px;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color: white;
+  }
+}
