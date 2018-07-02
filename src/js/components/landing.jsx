@@ -1,5 +1,6 @@
 import React from "react";
 import {Carrousel} from './carrousel.jsx';
+import {Fetcher} from './fetcher.jsx';
 import {
   Router,
   PropsRoute,
@@ -22,7 +23,12 @@ class Landing extends React.Component {
     <section> 
       <p style={{color: 'white'}}> pagewrapper - landing</p>
 
-      <div className="slidesContainer"> 
+      <div className="fetch-container"> 
+        <Fetcher />
+      </div>
+
+
+      <div className="slides-container"> 
         <Carrousel />
 
       </div>

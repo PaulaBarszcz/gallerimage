@@ -61,12 +61,19 @@ body {
   }
 }
 
-.slidesContainer {
-  // background-color: lightgray;
+  .slides-container {
+    // background-color: lightgray;
 
-  .slick-slide {
-    // background-color: brown;
+    .slick-slide {
+      // background-color: brown;
+    }
   }
-}
+
+  .fetch-container {
+    .fetch-result-container {
+      color: white;
+    }
+  }
+
 
 }
