@@ -10,6 +10,8 @@ html, body {
   box-sizing: border-box;
 }
 
+
+
 .row-flex {
   display: flex;
   flex-direction: row;
@@ -31,11 +33,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   border-bottom: 1px solid #C71E1E;
-  border-image: linear-gradient(to right, #C71E1E, #FF9500);
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  border-image-slice: 1;
+  padding: 0;
   
   .menuLi {
     
@@ -45,14 +43,6 @@ body {
       text-decoration: none;
       font-size: 25.5px;
       line-height: 76px;
-      
-      &.socials {
-        
-        img {
-          position: relative;
-          top: 10px;
-        }
-      }
     }
   }
   
@@ -71,6 +61,12 @@ body {
   }
 }
 
+.slidesContainer {
+  // background-color: lightgray;
 
+  .slick-slide {
+    // background-color: brown;
+  }
+}
 
 }

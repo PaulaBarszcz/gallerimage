@@ -1,4 +1,5 @@
 import React from "react";
+import {Carrousel} from './carrousel.jsx';
 import {
   Router,
   PropsRoute,
@@ -18,7 +19,15 @@ class Landing extends React.Component {
   render() {
 
     return <div className="page-wrapper">
+    <section> 
       <p style={{color: 'white'}}> pagewrapper - landing</p>
+
+      <div className="slidesContainer"> 
+        <Carrousel />
+
+      </div>
+
+    </section>
 
      
       
