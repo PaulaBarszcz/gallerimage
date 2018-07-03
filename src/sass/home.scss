@@ -62,10 +62,11 @@ body {
 }
 
   .slides-container {
-    // background-color: lightgray;
+    color: white;
 
-    .slick-slide {
-      // background-color: brown;
+    img {
+      position: relative;
+      margin: 0 auto;
     }
   }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-
+import {SingleSlide} from './singleSlide.jsx';
 
 class Carrousel extends React.Component {
   render() {
@@ -13,30 +13,10 @@ class Carrousel extends React.Component {
     };
     return (
       <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-          <img src="../images/cat.jpeg" />
-        </div>
-        <div>
-          <h3>2</h3>
-          <img src="http://placekitten.com/g/400/200" />
-        </div>
-        <div>
-          <h3>3</h3>
-           <img src="../images/cat.jpeg" />
-        </div>
-        <div>
-          <h3>4</h3>
-          <img src="http://placekitten.com/g/400/200" />
-        </div>
-        <div>
-          <h3>5</h3>
-           <img src="../images/cat.jpeg" />
-        </div>
-        <div>
-          <h3>6</h3>
-          <img src="http://placekitten.com/g/400/200" />
-        </div>
+
+      <SingleSlide number="1" src="../images/cat.jpeg" />
+      <SingleSlide number="2" src="http://placekitten.com/g/400/200" />
+       
       </Slider>
     );
   }
