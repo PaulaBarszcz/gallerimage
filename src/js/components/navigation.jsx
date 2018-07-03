@@ -22,7 +22,7 @@ class Navigation extends React.Component {
       <div className="page-wrapper">
         <nav>
           <ul className="main-nav">
-            <li className="menuLi"><IndexLink to="/" activeClassName="active-tab">gallerimage - Home</IndexLink></li>
+            <li className="menuLi"><IndexLink to="/" activeClassName="active-tab">GALLERIMAGE - Home</IndexLink></li>
             <li className="menuLi"><IndexLink to="/search" activeClassName="active-tab">Search</IndexLink>
             </li>
             <li className="menuLi"><IndexLink to="/geolocation" activeClassName="active-tab">Geolocation</IndexLink></li>

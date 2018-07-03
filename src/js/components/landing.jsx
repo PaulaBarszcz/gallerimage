@@ -1,5 +1,4 @@
 import React from "react";
-import {Carrousel} from './carrousel.jsx';
 import {Fetcher} from './fetcher.jsx';
 import {
   Router,
@@ -21,20 +20,10 @@ class Landing extends React.Component {
 
     return <div className="page-wrapper">
     <section> 
-      <p style={{color: 'white'}}> pagewrapper - landing</p>
-
       <div className="fetch-container"> 
         <Fetcher />
       </div>
-
-
-     
-
     </section>
-
-     
-      
-
     </div>
   };
 }

@@ -31,7 +31,6 @@ class Geolocation extends React.Component {
   render() {
 
       return <div>
-       <p style={{color: 'white'}}>Geolocation</p>
         
       </div>
     }

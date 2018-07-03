@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 class Carrousel extends React.Component {
   render() {
-    var settings = {
+    let settings = {
       dots: false,
       infinite: true,
       speed: 500,
@@ -11,8 +11,7 @@ class Carrousel extends React.Component {
       slidesToScroll: 1
     };
 
-    var photos = this.props.photos;
-        console.log('lala',photos[1].id);
+    let photos = this.props.photos;
 
     return (
       <div className="fetch-result-container">
@@ -27,7 +26,7 @@ class Carrousel extends React.Component {
             this.imgsrc = `https://farm${this.imgfarm}.staticflickr.com/${this.imgserver}/${this.imgid}_${this.imgsecret}.jpg`,
 
             <div key={item.id}>
-                <h3>Dog picture #{element+1}/100</h3>
+                <p className='slide-title'>Dog picture #{element+1}/100</p>
                 <img src={this.imgsrc} alt="dog image" />
             </div>
           ))}

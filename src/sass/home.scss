@@ -64,6 +64,11 @@ body {
   .slides-container {
     color: white;
 
+    .slide-title {
+      text-align: center;
+      font-size: 36px;
+    }
+
     img {
       position: relative;
       margin: 0 auto;

@@ -2,9 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Carrousel} from './carrousel.jsx';
 
-// https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=677f0332a9e20fbbdd0abefde03c3461&tags=dog&text=dog&format=json&nojsoncallback=1&auth_token=72157696959738981-a2d54d53fc4dbde6&api_sig=fcefa8fad5d62840d3cbd9c7197f22b2
-
-
 class Fetcher extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +17,6 @@ class Fetcher extends React.Component {
       .then(res => res.json())
       .then(
         (result) => {
-          console.log(result);
           this.setState({
             isLoaded: true,
             photos: result.photos.photo
@@ -47,14 +43,12 @@ class Fetcher extends React.Component {
       return <div>Loading...</div>;
     } else {
 
-      console.log(photos);
       this.photoArray= this.state.photos;
 
       return (
 
       <div className="slides-container"> 
         <Carrousel photos={this.photoArray} />
-
       </div>
       
       );

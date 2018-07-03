@@ -31,7 +31,6 @@ class Search extends React.Component {
   render() {
 
       return <div>
-       <p style={{color: 'white'}}>Search</p>
          
         
       </div>
