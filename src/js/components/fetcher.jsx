@@ -8,7 +8,8 @@ class Fetcher extends React.Component {
     this.state = {
       error: null,
       isLoaded: false,
-      photos: []
+      photos: [],
+      users: []
     };
   }
 
@@ -17,14 +18,12 @@ class Fetcher extends React.Component {
       .then(res => res.json())
       .then(
         (result) => {
+          this.allPhotos = result.photos.photo;
           this.setState({
             isLoaded: true,
             photos: result.photos.photo
           });
         },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
         (error) => {
           this.setState({
             isLoaded: true,
@@ -32,6 +31,44 @@ class Fetcher extends React.Component {
           });
         }
       )
+      .then(
+        (resultusers) =>  {   
+        console.log(this.allPhotos);
+
+        for (var i=0; i<this.allPhotos.length; i++) {
+
+          fetch(`https://api.flickr.com/services/rest/?method=flickr.people.getInfo&api_key=1523e8646661fa3f64e6d84462a2274b&user_id=${this.allPhotos[i].owner}&format=json&nojsoncallback=1&auth_token=72157670792491088-fecc059fbd3d44cb&api_sig=8545aa490a24023369ac23219cb1bc90`)
+            .then(res => res.json())
+            .then(
+              (resultusers) => {
+
+                console.log(resultusers);
+                
+                this.setState({
+                  isLoaded: true,
+                  users: resultusers
+                });
+              },
+              (error) => {
+                this.setState({
+                  isLoaded: true,
+                  error
+                });
+              }
+          )
+          
+        }
+
+        return resultusers
+
+        })
+      
+
+
+    
+
+
+
   }
 
   render() {
