@@ -7,8 +7,10 @@ class SingleSlide extends React.Component {
  
 
   return <div>
-      <h3>{this.props.number}</h3>
-      <img src={this.props.src} />
+  <div>
+      <h3>{this.props.imgsrc}</h3>
+      <img src={this.props.imgsrc} alt="dog image" />
+      </div>
     </div>
    };
 }

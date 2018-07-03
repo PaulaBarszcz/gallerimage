@@ -28,10 +28,7 @@ class Landing extends React.Component {
       </div>
 
 
-      <div className="slides-container"> 
-        <Carrousel />
-
-      </div>
+     
 
     </section>
 
