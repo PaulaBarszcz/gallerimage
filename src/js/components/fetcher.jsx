@@ -14,6 +14,7 @@ class Fetcher extends React.Component {
   }
 
   componentDidMount() {
+    this.photoInfoArray = [];
     fetch("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=5530b236f1442ae162669f80660df592&tags=dog&text=dog&format=json&nojsoncallback=1")
     .then(res => res.json())
     .then(
@@ -33,9 +34,8 @@ class Fetcher extends React.Component {
     )
     .then(
       (resultusers) =>  {   
-      console.log(this.allPhotos);
 
-      let photoInfoArray = [];
+      let identifNumber = 0;
 
       for (var i=0; i<this.allPhotos.length; i++) {
 
@@ -46,29 +46,31 @@ class Fetcher extends React.Component {
             let desc = Object.values(resultusers.person.description)[0];
             let username = Object.values(resultusers.person.username)[0];
             let date = Object.values(resultusers.person.photos.firstdatetaken)[0];
-            photoInfoArray.push({"desc": desc, "username": username, "date": date});
+            this.photoInfoArray.push({"id": identifNumber,"desc": desc, "username": username, "date": date});
+
+            identifNumber ++;
           },
           (error) => {
             this.setState({
               isLoaded: true,
               error
             });
-          }
-        ) 
+          },
+        )
       }
+    })
+    .then (
 
       this.setState({
         isLoaded: true,
-        photoInfo: photoInfoArray
+        photoInfo: this.photoInfoArray
       })
-
-      return resultusers
-    })
+      )
   }
 
   render() {
 
-    const { error, isLoaded, photos } = this.state;
+    const { error, isLoaded, photos, photoInfo } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
@@ -81,7 +83,7 @@ class Fetcher extends React.Component {
       return (
 
       <div className="slides-container"> 
-        <Carrousel photos={this.photoArray} photoInfo={this.photoInfo} />
+        <Carrousel photos={this.photoArray} photoInfo={this.photoInfoArray} />
       </div>
       
       );
