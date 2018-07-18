@@ -12,6 +12,9 @@ class Carrousel extends React.Component {
     };
 
     let photos = this.props.photos;
+    let photoInfo = this.props.photoInfo;
+
+    console.log(photoInfo);
 
     return (
       <div className="fetch-result-container">
