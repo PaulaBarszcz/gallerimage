@@ -14,7 +14,7 @@ class Fetcher extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=1523e8646661fa3f64e6d84462a2274b&tags=dog&text=dog&has_geo=&format=json&nojsoncallback=1&api_sig=05efd965800a96fe5936f0e4a68a2666")
+    fetch("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=5530b236f1442ae162669f80660df592&tags=dog&text=dog&format=json&nojsoncallback=1")
       .then(res => res.json())
       .then(
         (result) => {
