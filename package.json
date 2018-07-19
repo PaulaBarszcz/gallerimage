@@ -1,5 +1,5 @@
 {
-  "name": "EnergizerKonfigurator",
+  "name": "gallerimage",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/plej-digital/energizer-frame"
+    "url": "git+https://github.com/PaulaBarszcz/gallerimage"
   },
   "author": "PaulaBarszcz",
   "license": "MIT",
   "bugs": {
-    "url": "https://bitbucket.org/plej-digital/energizer-frame"
+    "url": "https://github.com/PaulaBarszcz/gallerimage"
   },
-  "homepage": "https://bitbucket.org/plej-digital/energizer-frame",
+  "homepage": "https://github.com/PaulaBarszcz/gallerimage",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
@@ -44,12 +44,10 @@
     "babel-polyfill": "^6.26.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "react": "^15.4.0",
-    "react-datalist": "^4.0.0",
     "react-dom": "^15.4.0",
     "react-font-face": "^0.2.1",
     "react-router": "^3.0.3",
     "react-slick": "^0.23.1",
-    "react-youtube": "^7.5.0",
     "whatwg-fetch": "^2.0.3"
   }
 }

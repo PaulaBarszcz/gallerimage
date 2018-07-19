@@ -5,7 +5,7 @@ import {
 
 class NotFound extends React.Component {
     render() {
-        return  <div className="notFound">
+        return <div className="notFound">
             Nie znaleziono strony. Wróć do <Link to="/" style={{fontWeight: "bold"}}>strony głównej.</Link>
         </div>
     }

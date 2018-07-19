@@ -4,16 +4,16 @@ import {Routing} from './components/routing.jsx';
 
 require('../sass/main.scss');
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
 
-  setTimeout(function(){
+    setTimeout(function () {
 
-    ReactDOM.render(
-      <div>
-        <Routing/>
-      </div>,
-      document.getElementById('app')
-    );
+        ReactDOM.render(
+            <div>
+                <Routing/>
+            </div>,
+            document.getElementById('app')
+        );
 
     }, 700);
 
