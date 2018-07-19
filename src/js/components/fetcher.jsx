@@ -15,10 +15,11 @@ class Fetcher extends React.Component {
 
     componentDidMount() {
         this.photoInfoArray = [];
-        fetch("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=5530b236f1442ae162669f80660df592&tags=dog&text=dog&format=json&nojsoncallback=1")
+        fetch("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=06ce4eb5530566dd57098561c9f2fa4f&tags=dog&text=dog&format=json&nojsoncallback=1&api_sig=d30d835510c9a69538b36843af036c80")
             .then(res => res.json())
             .then(
                 (result) => {
+
                     this.allPhotos = result.photos.photo;
                     this.setState({
                         isLoaded: true,
@@ -39,10 +40,11 @@ class Fetcher extends React.Component {
 
                     for (var i = 0; i < this.allPhotos.length; i++) {
 
-                        fetch(`https://api.flickr.com/services/rest/?method=flickr.people.getInfo&api_key=5530b236f1442ae162669f80660df592&user_id=${this.allPhotos[i].owner}&format=json&nojsoncallback=1`)
+                        fetch(`https://api.flickr.com/services/rest/?method=flickr.people.getInfo&api_key=06ce4eb5530566dd57098561c9f2fa4f&user_id=${this.allPhotos[i].owner}&format=json&nojsoncallback=1`)
                             .then(res => res.json())
                             .then(
                                 (resultusers) => {
+
                                     let desc = Object.values(resultusers.person.description)[0];
                                     let username = Object.values(resultusers.person.username)[0];
                                     let date = Object.values(resultusers.person.photos.firstdatetaken)[0];
@@ -65,6 +67,14 @@ class Fetcher extends React.Component {
                     }
                 })
             .then(
+                console.log('this.photoInfoArray', this.photoInfoArray),
+                console.log('this.photoInfoArray', this.photoInfoArray['0']),
+
+                console.log('this.photoInfoArray', Object.keys(this.photoInfoArray)),
+
+
+
+
                 this.setState({
                     isLoaded: true,
                     photoInfo: this.photoInfoArray

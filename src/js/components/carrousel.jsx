@@ -27,10 +27,10 @@ class Carrousel extends React.Component {
         let photos = this.props.photos;
 
 
-        console.log('photoInfo', this.props.photoInfo);
-        console.log('photoInfo.desc', this.props.photoInfo.desc);
-        console.log('Object.keys(this.props.photoInfo)', Object.keys(this.props.photoInfo));
-        console.log('Object.values(this.props.photoInfo)', Object.values(this.props.photoInfo));
+        // console.log('photoInfo', this.props.photoInfo);
+        // console.log('photoInfo.desc', this.props.photoInfo.desc);
+        // console.log('Object.keys(this.props.photoInfo)', Object.keys(this.props.photoInfo));
+        // console.log('Object.values(this.props.photoInfo)', Object.values(this.props.photoInfo));
 
 
         return (
