@@ -542,7 +542,7 @@ $exports.store = store;
 "use strict";
 
 
-module.exports = __webpack_require__(70);
+module.exports = __webpack_require__(69);
 
 
 /***/ }),
@@ -1094,7 +1094,7 @@ module.exports = function (NAME, exec) {
 
 
 
-var _prodInvariant = __webpack_require__(71);
+var _prodInvariant = __webpack_require__(70);
 
 var ReactCurrentOwner = __webpack_require__(39);
 
@@ -1813,7 +1813,7 @@ var _prodInvariant = __webpack_require__(8),
     _assign = __webpack_require__(11);
 
 var CallbackQueue = __webpack_require__(212);
-var PooledClass = __webpack_require__(65);
+var PooledClass = __webpack_require__(64);
 var ReactFeatureFlags = __webpack_require__(213);
 var ReactReconciler = __webpack_require__(72);
 var Transaction = __webpack_require__(104);
@@ -2122,7 +2122,7 @@ if (__webpack_require__(12)) {
   var createArrayIncludes = __webpack_require__(87);
   var speciesConstructor = __webpack_require__(94);
   var ArrayIterators = __webpack_require__(135);
-  var Iterators = __webpack_require__(68);
+  var Iterators = __webpack_require__(67);
   var $iterDetect = __webpack_require__(91);
   var setSpecies = __webpack_require__(59);
   var arrayFill = __webpack_require__(134);
@@ -2645,7 +2645,7 @@ module.exports = {
 
 var _assign = __webpack_require__(11);
 
-var PooledClass = __webpack_require__(65);
+var PooledClass = __webpack_require__(64);
 
 var emptyFunction = __webpack_require__(38);
 var warning = __webpack_require__(3);
@@ -4027,16 +4027,6 @@ module.exports = ReactElement;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-module.exports = __webpack_require__(463);
-
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -4149,7 +4139,7 @@ module.exports = PooledClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 66 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var def = __webpack_require__(13).f;
@@ -4162,7 +4152,7 @@ module.exports = function (it, tag, stat) {
 
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(0);
@@ -4198,14 +4188,14 @@ module.exports = exporter;
 
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports) {
 
 module.exports = {};
 
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(7);
@@ -4216,7 +4206,7 @@ module.exports = function (it, TYPE) {
 
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4352,7 +4342,7 @@ module.exports = React;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4392,6 +4382,16 @@ function reactProdInvariant(code) {
 }
 
 module.exports = reactProdInvariant;
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = __webpack_require__(463);
+
 
 /***/ }),
 /* 72 */
@@ -5902,7 +5902,7 @@ var anInstance = __webpack_require__(60);
 var isObject = __webpack_require__(7);
 var fails = __webpack_require__(6);
 var $iterDetect = __webpack_require__(91);
-var setToStringTag = __webpack_require__(66);
+var setToStringTag = __webpack_require__(65);
 var inheritIfRequired = __webpack_require__(121);
 
 module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
@@ -7500,7 +7500,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(64);
+var _reactDom = __webpack_require__(71);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -8422,9 +8422,9 @@ var LIBRARY = __webpack_require__(47);
 var $export = __webpack_require__(0);
 var redefine = __webpack_require__(21);
 var hide = __webpack_require__(20);
-var Iterators = __webpack_require__(68);
+var Iterators = __webpack_require__(67);
 var $iterCreate = __webpack_require__(127);
-var setToStringTag = __webpack_require__(66);
+var setToStringTag = __webpack_require__(65);
 var getPrototypeOf = __webpack_require__(27);
 var ITERATOR = __webpack_require__(9)('iterator');
 var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
@@ -8496,7 +8496,7 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 
 var create = __webpack_require__(57);
 var descriptor = __webpack_require__(53);
-var setToStringTag = __webpack_require__(66);
+var setToStringTag = __webpack_require__(65);
 var IteratorPrototype = {};
 
 // 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
@@ -8545,7 +8545,7 @@ module.exports = function (KEY) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
-var Iterators = __webpack_require__(68);
+var Iterators = __webpack_require__(67);
 var ITERATOR = __webpack_require__(9)('iterator');
 var ArrayProto = Array.prototype;
 
@@ -8575,7 +8575,7 @@ module.exports = function (object, index, value) {
 
 var classof = __webpack_require__(79);
 var ITERATOR = __webpack_require__(9)('iterator');
-var Iterators = __webpack_require__(68);
+var Iterators = __webpack_require__(67);
 module.exports = __webpack_require__(29).getIteratorMethod = function (it) {
   if (it != undefined) return it[ITERATOR]
     || it['@@iterator']
@@ -8625,7 +8625,7 @@ module.exports = function fill(value /* , start = 0, end = @length */) {
 
 var addToUnscopables = __webpack_require__(48);
 var step = __webpack_require__(183);
-var Iterators = __webpack_require__(68);
+var Iterators = __webpack_require__(67);
 var toIObject = __webpack_require__(25);
 
 // 22.1.3.4 Array.prototype.entries()
@@ -8868,7 +8868,7 @@ var toIndex = __webpack_require__(192);
 var gOPN = __webpack_require__(58).f;
 var dP = __webpack_require__(13).f;
 var arrayFill = __webpack_require__(134);
-var setToStringTag = __webpack_require__(66);
+var setToStringTag = __webpack_require__(65);
 var ARRAY_BUFFER = 'ArrayBuffer';
 var DATA_VIEW = 'DataView';
 var PROTOTYPE = 'prototype';
@@ -9986,7 +9986,7 @@ var _prodInvariant = __webpack_require__(8);
 var ReactPropTypesSecret = __webpack_require__(221);
 var propTypesFactory = __webpack_require__(205);
 
-var React = __webpack_require__(70);
+var React = __webpack_require__(69);
 var PropTypes = propTypesFactory(React.isValidElement);
 
 var invariant = __webpack_require__(2);
@@ -11885,7 +11885,7 @@ module.exports = function (fn, args, that) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var $parseInt = __webpack_require__(5).parseInt;
-var $trim = __webpack_require__(67).trim;
+var $trim = __webpack_require__(66).trim;
 var ws = __webpack_require__(120);
 var hex = /^[-+]?0[xX]/;
 
@@ -11900,7 +11900,7 @@ module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? f
 /***/ (function(module, exports, __webpack_require__) {
 
 var $parseFloat = __webpack_require__(5).parseFloat;
-var $trim = __webpack_require__(67).trim;
+var $trim = __webpack_require__(66).trim;
 
 module.exports = 1 / $parseFloat(__webpack_require__(120) + '-0') !== -Infinity ? function parseFloat(str) {
   var string = $trim(String(str), 3);
@@ -12114,7 +12114,7 @@ module.exports = function (C, x) {
 "use strict";
 
 var strong = __webpack_require__(188);
-var validate = __webpack_require__(69);
+var validate = __webpack_require__(68);
 var MAP = 'Map';
 
 // 23.1 Map Objects
@@ -12150,7 +12150,7 @@ var step = __webpack_require__(183);
 var setSpecies = __webpack_require__(59);
 var DESCRIPTORS = __webpack_require__(12);
 var fastKey = __webpack_require__(46).fastKey;
-var validate = __webpack_require__(69);
+var validate = __webpack_require__(68);
 var SIZE = DESCRIPTORS ? '_s' : 'size';
 
 var getEntry = function (that, key) {
@@ -12291,7 +12291,7 @@ module.exports = {
 "use strict";
 
 var strong = __webpack_require__(188);
-var validate = __webpack_require__(69);
+var validate = __webpack_require__(68);
 var SET = 'Set';
 
 // 23.2 Set Objects
@@ -12318,7 +12318,7 @@ var assign = __webpack_require__(171);
 var weak = __webpack_require__(191);
 var isObject = __webpack_require__(7);
 var fails = __webpack_require__(6);
-var validate = __webpack_require__(69);
+var validate = __webpack_require__(68);
 var WEAK_MAP = 'WeakMap';
 var getWeak = meta.getWeak;
 var isExtensible = Object.isExtensible;
@@ -12385,7 +12385,7 @@ var anInstance = __webpack_require__(60);
 var forOf = __webpack_require__(61);
 var createArrayMethod = __webpack_require__(37);
 var $has = __webpack_require__(24);
-var validate = __webpack_require__(69);
+var validate = __webpack_require__(68);
 var arrayFind = createArrayMethod(5);
 var arrayFindIndex = createArrayMethod(6);
 var id = 0;
@@ -12652,7 +12652,7 @@ module.exports = Math.scale || function scale(x, inLow, inHigh, outLow, outHigh)
 
 
 
-var _prodInvariant = __webpack_require__(71),
+var _prodInvariant = __webpack_require__(70),
     _assign = __webpack_require__(11);
 
 var ReactNoopUpdateQueue = __webpack_require__(201);
@@ -14905,7 +14905,7 @@ var _prodInvariant = __webpack_require__(8);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var PooledClass = __webpack_require__(65);
+var PooledClass = __webpack_require__(64);
 
 var invariant = __webpack_require__(2);
 
@@ -16098,7 +16098,7 @@ module.exports = instantiateReactComponent;
 
 var _prodInvariant = __webpack_require__(8);
 
-var React = __webpack_require__(70);
+var React = __webpack_require__(69);
 
 var invariant = __webpack_require__(2);
 
@@ -16677,7 +16677,7 @@ var _prodInvariant = __webpack_require__(8);
 
 var DOMLazyTree = __webpack_require__(73);
 var DOMProperty = __webpack_require__(49);
-var React = __webpack_require__(70);
+var React = __webpack_require__(69);
 var ReactBrowserEventEmitter = __webpack_require__(108);
 var ReactCurrentOwner = __webpack_require__(39);
 var ReactDOMComponentTree = __webpack_require__(15);
@@ -18501,7 +18501,7 @@ var redefine = __webpack_require__(21);
 var META = __webpack_require__(46).KEY;
 var $fails = __webpack_require__(6);
 var shared = __webpack_require__(86);
-var setToStringTag = __webpack_require__(66);
+var setToStringTag = __webpack_require__(65);
 var uid = __webpack_require__(54);
 var wks = __webpack_require__(9);
 var wksExt = __webpack_require__(167);
@@ -19060,7 +19060,7 @@ var fails = __webpack_require__(6);
 var gOPN = __webpack_require__(58).f;
 var gOPD = __webpack_require__(26).f;
 var dP = __webpack_require__(13).f;
-var $trim = __webpack_require__(67).trim;
+var $trim = __webpack_require__(66).trim;
 var NUMBER = 'Number';
 var $Number = global[NUMBER];
 var Base = $Number;
@@ -19709,7 +19709,7 @@ $export($export.S, 'String', {
 "use strict";
 
 // 21.1.3.25 String.prototype.trim()
-__webpack_require__(67)('trim', function ($trim) {
+__webpack_require__(66)('trim', function ($trim) {
   return function trim() {
     return $trim(this, 3);
   };
@@ -21010,7 +21010,7 @@ if (!USE_NATIVE) {
 }
 
 $export($export.G + $export.W + $export.F * !USE_NATIVE, { Promise: $Promise });
-__webpack_require__(66)($Promise, PROMISE);
+__webpack_require__(65)($Promise, PROMISE);
 __webpack_require__(59)(PROMISE);
 Wrapper = __webpack_require__(29)[PROMISE];
 
@@ -21083,7 +21083,7 @@ $export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(91)(function
 "use strict";
 
 var weak = __webpack_require__(191);
-var validate = __webpack_require__(69);
+var validate = __webpack_require__(68);
 var WEAK_SET = 'WeakSet';
 
 // 23.4 WeakSet Objects
@@ -21733,7 +21733,7 @@ $export($export.P + $export.F * /Version\/10\.\d+(\.\d+)? Safari\//.test(userAge
 "use strict";
 
 // https://github.com/sebmarkbage/ecmascript-string-left-right-trim
-__webpack_require__(67)('trimLeft', function ($trim) {
+__webpack_require__(66)('trimLeft', function ($trim) {
   return function trimLeft() {
     return $trim(this, 1);
   };
@@ -21747,7 +21747,7 @@ __webpack_require__(67)('trimLeft', function ($trim) {
 "use strict";
 
 // https://github.com/sebmarkbage/ecmascript-string-left-right-trim
-__webpack_require__(67)('trimRight', function ($trim) {
+__webpack_require__(66)('trimRight', function ($trim) {
   return function trimRight() {
     return $trim(this, 2);
   };
@@ -22738,7 +22738,7 @@ var getKeys = __webpack_require__(55);
 var redefine = __webpack_require__(21);
 var global = __webpack_require__(5);
 var hide = __webpack_require__(20);
-var Iterators = __webpack_require__(68);
+var Iterators = __webpack_require__(67);
 var wks = __webpack_require__(9);
 var ITERATOR = wks('iterator');
 var TO_STRING_TAG = wks('toStringTag');
@@ -24052,7 +24052,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(64);
+var _reactDom = __webpack_require__(71);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -24284,7 +24284,7 @@ module.exports = ReactChildren;
 
 
 
-var _prodInvariant = __webpack_require__(71);
+var _prodInvariant = __webpack_require__(70);
 
 var invariant = __webpack_require__(2);
 
@@ -24399,7 +24399,7 @@ module.exports = PooledClass;
 
 
 
-var _prodInvariant = __webpack_require__(71);
+var _prodInvariant = __webpack_require__(70);
 
 var ReactCurrentOwner = __webpack_require__(39);
 var REACT_ELEMENT_TYPE = __webpack_require__(202);
@@ -24814,7 +24814,7 @@ module.exports = ReactDOMFactories;
 
 
 
-var _prodInvariant = __webpack_require__(71);
+var _prodInvariant = __webpack_require__(70);
 
 var ReactPropTypeLocationNames = __webpack_require__(456);
 var ReactPropTypesSecret = __webpack_require__(457);
@@ -25117,7 +25117,7 @@ module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
  */
 
 
-var _prodInvariant = __webpack_require__(71);
+var _prodInvariant = __webpack_require__(70);
 
 var ReactElement = __webpack_require__(63);
 
@@ -25830,7 +25830,7 @@ module.exports = BeforeInputEventPlugin;
 
 var _assign = __webpack_require__(11);
 
-var PooledClass = __webpack_require__(65);
+var PooledClass = __webpack_require__(64);
 
 var getTextContentAccessor = __webpack_require__(211);
 
@@ -29817,7 +29817,7 @@ module.exports = ReactDOMInput;
 
 var _assign = __webpack_require__(11);
 
-var React = __webpack_require__(70);
+var React = __webpack_require__(69);
 var ReactDOMComponentTree = __webpack_require__(15);
 var ReactDOMSelect = __webpack_require__(222);
 
@@ -30715,7 +30715,7 @@ module.exports = ReactChildReconciler;
 var _prodInvariant = __webpack_require__(8),
     _assign = __webpack_require__(11);
 
-var React = __webpack_require__(70);
+var React = __webpack_require__(69);
 var ReactComponentEnvironment = __webpack_require__(151);
 var ReactCurrentOwner = __webpack_require__(39);
 var ReactErrorUtils = __webpack_require__(143);
@@ -31909,7 +31909,7 @@ module.exports = flattenChildren;
 
 var _assign = __webpack_require__(11);
 
-var PooledClass = __webpack_require__(65);
+var PooledClass = __webpack_require__(64);
 var Transaction = __webpack_require__(104);
 var ReactInstrumentation = __webpack_require__(28);
 var ReactServerUpdateQueue = __webpack_require__(512);
@@ -32588,7 +32588,7 @@ var _assign = __webpack_require__(11);
 
 var EventListener = __webpack_require__(228);
 var ExecutionEnvironment = __webpack_require__(17);
-var PooledClass = __webpack_require__(65);
+var PooledClass = __webpack_require__(64);
 var ReactDOMComponentTree = __webpack_require__(15);
 var ReactUpdates = __webpack_require__(40);
 
@@ -32824,7 +32824,7 @@ module.exports = ReactInjection;
 var _assign = __webpack_require__(11);
 
 var CallbackQueue = __webpack_require__(212);
-var PooledClass = __webpack_require__(65);
+var PooledClass = __webpack_require__(64);
 var ReactBrowserEventEmitter = __webpack_require__(108);
 var ReactInputSelection = __webpack_require__(229);
 var ReactInstrumentation = __webpack_require__(28);
@@ -35149,7 +35149,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(64);
+var _reactDom = __webpack_require__(71);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -35225,7 +35225,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(64);
+var _reactDom = __webpack_require__(71);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -35286,7 +35286,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(64);
+var _reactDom = __webpack_require__(71);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -37894,10 +37894,6 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(64);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
 var _carrousel = __webpack_require__(581);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -37936,10 +37932,13 @@ var Fetcher = function (_React$Component) {
             }).then(function (result) {
 
                 _this2.allPhotos = result.photos.photo;
+
                 _this2.setState({
                     isLoaded: true,
                     photos: result.photos.photo
                 });
+
+                return result.photos.photo;
             }, function (error) {
                 _this2.setState({
                     isLoaded: true,
@@ -37947,41 +37946,41 @@ var Fetcher = function (_React$Component) {
                 });
             }).then(function (resultusers) {
 
-                var identifNumber = 0;
+                var promises = [];
 
-                for (var i = 0; i < _this2.allPhotos.length; i++) {
+                var _loop = function _loop(i) {
 
-                    fetch('https://api.flickr.com/services/rest/?method=flickr.people.getInfo&api_key=06ce4eb5530566dd57098561c9f2fa4f&user_id=' + _this2.allPhotos[i].owner + '&format=json&nojsoncallback=1').then(function (res) {
+                    promises.push(fetch('https://api.flickr.com/services/rest/?method=flickr.people.getInfo&api_key=06ce4eb5530566dd57098561c9f2fa4f&user_id=' + _this2.allPhotos[i].owner + '&format=json&nojsoncallback=1').then(function (res) {
                         return res.json();
-                    }).then(function (resultusers) {
-
-                        var desc = Object.values(resultusers.person.description)[0];
-                        var username = Object.values(resultusers.person.username)[0];
-                        var date = Object.values(resultusers.person.photos.firstdatetaken)[0];
-                        _this2.photoInfoArray.push({
-                            "id": identifNumber,
-                            "desc": desc,
-                            "username": username,
-                            "date": date
-                        });
-
-                        identifNumber++;
+                    }).then(function (result) {
+                        var desc = Object.values(result.person.description)[0];
+                        var username = Object.values(result.person.username)[0];
+                        var date = Object.values(result.person.photos.firstdatetaken)[0];
+                        resultusers[i].desc = result.person.description._content;
+                        resultusers[i].username = result.person.username._content;
+                        // this.resultusers[i].date = result.person.description;
                     }, function (error) {
                         _this2.setState({
                             isLoaded: true,
                             error: error
                         });
-                    });
+                    }));
+                };
+
+                for (var i = 0; i < _this2.allPhotos.length; i++) {
+                    _loop(i);
                 }
-            }).then(console.log('this.photoInfoArray', this.photoInfoArray), console.log('this.photoInfoArray', this.photoInfoArray['0']), console.log('this.photoInfoArray', Object.keys(this.photoInfoArray)),
 
-            //if(dlugosc this.photoInfoArray == 100){this.setState({...})}   - ale jak dobrac sie do tej dlugosci?
+                return Promise.all(promises).then(function () {
+                    return resultusers;
+                });
+            }).then(function (resultusers) {
 
-
-            this.setState({
-                isLoaded: true,
-                photoInfo: this.photoInfoArray
-            }));
+                _this2.setState({
+                    isLoaded: true,
+                    photoInfo: resultusers
+                });
+            });
         }
     }, {
         key: 'render',
@@ -37989,7 +37988,6 @@ var Fetcher = function (_React$Component) {
             var _state = this.state,
                 error = _state.error,
                 isLoaded = _state.isLoaded,
-                photos = _state.photos,
                 photoInfo = _state.photoInfo;
 
             if (error) {
@@ -38013,7 +38011,7 @@ var Fetcher = function (_React$Component) {
                 return _react2.default.createElement(
                     'div',
                     { className: 'slides-container' },
-                    _react2.default.createElement(_carrousel.Carrousel, { photos: this.photoArray, photoInfo: this.photoInfoArray })
+                    _react2.default.createElement(_carrousel.Carrousel, { photoInfo: this.state.photoInfo })
                 );
             }
         }
@@ -38057,25 +38055,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Carrousel = function (_React$Component) {
     _inherits(Carrousel, _React$Component);
 
-    function Carrousel(props) {
+    function Carrousel() {
         _classCallCheck(this, Carrousel);
 
-        var _this = _possibleConstructorReturn(this, (Carrousel.__proto__ || Object.getPrototypeOf(Carrousel)).call(this, props));
-
-        _this.state = {
-            photoInfo: []
-        };
-        return _this;
+        return _possibleConstructorReturn(this, (Carrousel.__proto__ || Object.getPrototypeOf(Carrousel)).apply(this, arguments));
     }
 
     _createClass(Carrousel, [{
-        key: "componentWillReceiveProps",
-        value: function componentWillReceiveProps() {
-            this.setState({
-                photoInfo: this.props.photoInfo
-            });
-        }
-    }, {
         key: "render",
         value: function render() {
             var _this2 = this;
@@ -38088,13 +38074,7 @@ var Carrousel = function (_React$Component) {
                 slidesToScroll: 1
             };
 
-            var photos = this.props.photos;
-
-            // console.log('photoInfo', this.props.photoInfo);
-            // console.log('photoInfo.desc', this.props.photoInfo.desc);
-            // console.log('Object.keys(this.props.photoInfo)', Object.keys(this.props.photoInfo));
-            // console.log('Object.values(this.props.photoInfo)', Object.values(this.props.photoInfo));
-
+            var photoInfo = this.props.photoInfo;
 
             return _react2.default.createElement(
                 "div",
@@ -38102,8 +38082,8 @@ var Carrousel = function (_React$Component) {
                 _react2.default.createElement(
                     _reactSlick2.default,
                     settings,
-                    this.props.photos.map(function (item, element) {
-                        return _this2.imgid = item.id, _this2.userid = item.owner, _this2.imgfarm = item.farm, _this2.imgserver = item.server, _this2.imgsecret = item.secret, _this2.author = _this2.props.photoInfo[element], _this2.desc = _this2.props.photoInfo[element], _this2.date = _this2.props.photoInfo[element], _this2.imgsrc = "https://farm" + _this2.imgfarm + ".staticflickr.com/" + _this2.imgserver + "/" + _this2.imgid + "_" + _this2.imgsecret + ".jpg", _react2.default.createElement(
+                    photoInfo.map(function (item, element) {
+                        return _this2.imgid = item.id, _this2.userid = item.owner, _this2.imgfarm = item.farm, _this2.imgserver = item.server, _this2.imgsecret = item.secret, _this2.author = item.username, _this2.desc = item.desc, _this2.imgsrc = "https://farm" + _this2.imgfarm + ".staticflickr.com/" + _this2.imgserver + "/" + _this2.imgid + "_" + _this2.imgsecret + ".jpg", _react2.default.createElement(
                             "div",
                             { key: item.id },
                             _react2.default.createElement(
@@ -38117,20 +38097,8 @@ var Carrousel = function (_React$Component) {
                             _react2.default.createElement(
                                 "p",
                                 null,
-                                "Author:",
+                                "Author: ",
                                 _this2.author
-                            ),
-                            _react2.default.createElement(
-                                "p",
-                                null,
-                                "Description: ",
-                                _this2.desc
-                            ),
-                            _react2.default.createElement(
-                                "p",
-                                null,
-                                "Date: ",
-                                _this2.date
                             )
                         );
                     })
@@ -38429,7 +38397,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(64);
+var _reactDom = __webpack_require__(71);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
