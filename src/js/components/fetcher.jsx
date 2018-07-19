@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {Carrousel} from './carrousel.jsx';
 
 class Fetcher extends React.Component {
@@ -14,15 +13,15 @@ class Fetcher extends React.Component {
     }
 
     componentDidMount() {
-        console.log('start');
+
         this.photoInfoArray = [];
         fetch("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=06ce4eb5530566dd57098561c9f2fa4f&tags=dog&text=dog&format=json&nojsoncallback=1&api_sig=d30d835510c9a69538b36843af036c80")
             .then(res => res.json())
             .then(
                 (result) => {
 
-
                     this.allPhotos = result.photos.photo;
+
                     this.setState({
                         isLoaded: true,
                         photos: result.photos.photo
@@ -49,8 +48,6 @@ class Fetcher extends React.Component {
                             .then(res => res.json())
                             .then(
                                 (result) => {
-                                    // console.log(resultusers[i]);
-                                    // console.log(result);
                                     let desc = Object.values(result.person.description)[0];
                                     let username = Object.values(result.person.username)[0];
                                     let date = Object.values(result.person.photos.firstdatetaken)[0];
@@ -58,8 +55,6 @@ class Fetcher extends React.Component {
                                     resultusers[i].username = result.person.username._content;
                                     // this.resultusers[i].date = result.person.description;
 
-                                    console.log('promise resolved');
-                                    // console.log(resultusers);
                                 },
                                 (error) => {
                                     this.setState({
@@ -71,8 +66,6 @@ class Fetcher extends React.Component {
                         );
                     }
 
-                    console.log('all promises created');
-
                     return Promise.all(promises)
                         .then(
                             () =>  resultusers
@@ -80,13 +73,6 @@ class Fetcher extends React.Component {
                 })
             .then(
                 (resultusers) => {
-                    console.log('expect all promises resolved')
-                    console.log(resultusers.slice(0));
-                    // console.log('this.photoInfoArray', this.photoInfoArray);
-                    // console.log('this.photoInfoArray', this.photoInfoArray[0]);
-                    // console.log('this.photoInfoArray', Object.keys(this.photoInfoArray));
-
-                    //if(dlugosc this.photoInfoArray == 100){this.setState({...})}   - ale jak dobrac sie do tej dlugosci?
 
                     this.setState({
                         isLoaded: true,
@@ -99,9 +85,7 @@ class Fetcher extends React.Component {
 
     render() {
 
-        console.log('render');
-
-        const {error, isLoaded, photos, photoInfo} = this.state;
+        const {error, isLoaded, photoInfo} = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
@@ -110,8 +94,6 @@ class Fetcher extends React.Component {
 
             this.photoArray = this.state.photos;
             this.photoInfo = this.state.photoInfo;
-
-            console.log(this.photoInfoArray.slice(0));
 
             return (
 
