@@ -72,7 +72,7 @@ class Fetcher extends React.Component {
 
                 console.log('this.photoInfoArray', Object.keys(this.photoInfoArray)),
 
-
+                //if(dlugosc this.photoInfoArray == 100){this.setState({...})}   - ale jak dobrac sie do tej dlugosci?
 
 
                 this.setState({
