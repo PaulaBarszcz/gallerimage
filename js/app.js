@@ -24064,14 +24064,14 @@ __webpack_require__(598);
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  setTimeout(function () {
+    setTimeout(function () {
 
-    _reactDom2.default.render(_react2.default.createElement(
-      'div',
-      null,
-      _react2.default.createElement(_routing.Routing, null)
-    ), document.getElementById('app'));
-  }, 700);
+        _reactDom2.default.render(_react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(_routing.Routing, null)
+        ), document.getElementById('app'));
+    }, 700);
 });
 
 /***/ }),
@@ -35139,7 +35139,7 @@ module.exports = ReactDOMInvalidARIAHook;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.Routing = undefined;
 
@@ -35174,35 +35174,35 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Routing = function (_React$Component) {
-  _inherits(Routing, _React$Component);
+    _inherits(Routing, _React$Component);
 
-  function Routing() {
-    _classCallCheck(this, Routing);
+    function Routing() {
+        _classCallCheck(this, Routing);
 
-    return _possibleConstructorReturn(this, (Routing.__proto__ || Object.getPrototypeOf(Routing)).apply(this, arguments));
-  }
-
-  _createClass(Routing, [{
-    key: 'render',
-    value: function render() {
-      var memoryHistory = (0, _reactRouter.createMemoryHistory)();
-
-      return _react2.default.createElement(
-        _reactRouter.Router,
-        { history: memoryHistory },
-        _react2.default.createElement(
-          _reactRouter.Route,
-          { path: '/', component: _navigation.Navigation },
-          _react2.default.createElement(_reactRouter.IndexRoute, { component: _landing.Landing }),
-          _react2.default.createElement(_reactRouter.Route, { path: '/search', component: _search.Search, sub: 'konfigurator' }),
-          _react2.default.createElement(_reactRouter.Route, { path: '/geolocation', component: _geolocation.Geolocation }),
-          _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notFound.NotFound })
-        )
-      );
+        return _possibleConstructorReturn(this, (Routing.__proto__ || Object.getPrototypeOf(Routing)).apply(this, arguments));
     }
-  }]);
 
-  return Routing;
+    _createClass(Routing, [{
+        key: 'render',
+        value: function render() {
+            var memoryHistory = (0, _reactRouter.createMemoryHistory)();
+
+            return _react2.default.createElement(
+                _reactRouter.Router,
+                { history: memoryHistory },
+                _react2.default.createElement(
+                    _reactRouter.Route,
+                    { path: '/', component: _navigation.Navigation },
+                    _react2.default.createElement(_reactRouter.IndexRoute, { component: _landing.Landing }),
+                    _react2.default.createElement(_reactRouter.Route, { path: '/search', component: _search.Search, sub: 'konfigurator' }),
+                    _react2.default.createElement(_reactRouter.Route, { path: '/geolocation', component: _geolocation.Geolocation }),
+                    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notFound.NotFound })
+                )
+            );
+        }
+    }]);
+
+    return Routing;
 }(_react2.default.Component);
 
 exports.Routing = Routing;
@@ -35215,7 +35215,7 @@ exports.Routing = Routing;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.Search = undefined;
 
@@ -35238,44 +35238,32 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Search = function (_React$Component) {
-  _inherits(Search, _React$Component);
+    _inherits(Search, _React$Component);
 
-  function Search(props) {
-    _classCallCheck(this, Search);
+    function Search(props) {
+        _classCallCheck(this, Search);
 
-    var _this = _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).call(this, props));
 
-    _this.state = {
-      activeSection: ""
+        _this.state = {
+            activeSection: ""
 
-    };
-    return _this;
-  }
-
-  _createClass(Search, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-
-      // fetch("data/batteries.json").then(r => r.json()).then(response => {
-
-      //   this.setState({
-      //     batteries: response
-      //   })
-      //   this.batteries = response;
-
-      //   this.populateOptions();
-
-      // });
+        };
+        return _this;
     }
-  }, {
-    key: 'render',
-    value: function render() {
 
-      return _react2.default.createElement('div', null);
-    }
-  }]);
+    _createClass(Search, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {}
+    }, {
+        key: 'render',
+        value: function render() {
 
-  return Search;
+            return _react2.default.createElement('div', null);
+        }
+    }]);
+
+    return Search;
 }(_react2.default.Component);
 
 exports.Search = Search;
@@ -35288,7 +35276,7 @@ exports.Search = Search;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.Geolocation = undefined;
 
@@ -35311,44 +35299,32 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Geolocation = function (_React$Component) {
-  _inherits(Geolocation, _React$Component);
+    _inherits(Geolocation, _React$Component);
 
-  function Geolocation(props) {
-    _classCallCheck(this, Geolocation);
+    function Geolocation(props) {
+        _classCallCheck(this, Geolocation);
 
-    var _this = _possibleConstructorReturn(this, (Geolocation.__proto__ || Object.getPrototypeOf(Geolocation)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Geolocation.__proto__ || Object.getPrototypeOf(Geolocation)).call(this, props));
 
-    _this.state = {
-      activeSection: ""
+        _this.state = {
+            activeSection: ""
 
-    };
-    return _this;
-  }
-
-  _createClass(Geolocation, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-
-      // fetch("data/batteries.json").then(r => r.json()).then(response => {
-
-      //   this.setState({
-      //     batteries: response
-      //   })
-      //   this.batteries = response;
-
-      //   this.populateOptions();
-
-      // });
+        };
+        return _this;
     }
-  }, {
-    key: 'render',
-    value: function render() {
 
-      return _react2.default.createElement('div', null);
-    }
-  }]);
+    _createClass(Geolocation, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {}
+    }, {
+        key: 'render',
+        value: function render() {
 
-  return Geolocation;
+            return _react2.default.createElement('div', null);
+        }
+    }]);
+
+    return Geolocation;
 }(_react2.default.Component);
 
 exports.Geolocation = Geolocation;
@@ -37739,7 +37715,7 @@ var replaceLocation = exports.replaceLocation = function replaceLocation(locatio
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.Navigation = undefined;
 
@@ -37760,74 +37736,75 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Navigation = function (_React$Component) {
-  _inherits(Navigation, _React$Component);
+    _inherits(Navigation, _React$Component);
 
-  function Navigation(props) {
-    _classCallCheck(this, Navigation);
+    function Navigation(props) {
+        _classCallCheck(this, Navigation);
 
-    var _this = _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).call(this, props));
 
-    _this.handleNavClick = function (e) {
-      var body = document.querySelector("body");
-      body.classList.toggle("nav-show");
-      e.stopPropagation();
-    };
+        _this.handleNavClick = function (e) {
+            var body = document.querySelector("body");
+            body.classList.toggle("nav-show");
+            e.stopPropagation();
+        };
 
-    return _this;
-  }
-
-  _createClass(Navigation, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'divNav' },
-        _react2.default.createElement(
-          'div',
-          { className: 'page-wrapper' },
-          _react2.default.createElement(
-            'nav',
-            null,
-            _react2.default.createElement(
-              'ul',
-              { className: 'main-nav' },
-              _react2.default.createElement(
-                'li',
-                { className: 'menuLi' },
-                _react2.default.createElement(
-                  _reactRouter.IndexLink,
-                  { to: '/', activeClassName: 'active-tab' },
-                  'GALLERIMAGE - Home'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'menuLi' },
-                _react2.default.createElement(
-                  _reactRouter.IndexLink,
-                  { to: '/search', activeClassName: 'active-tab' },
-                  'Search'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                { className: 'menuLi' },
-                _react2.default.createElement(
-                  _reactRouter.IndexLink,
-                  { to: '/geolocation', activeClassName: 'active-tab' },
-                  'Geolocation'
-                )
-              )
-            )
-          )
-        ),
-        this.props.children
-      );
+        return _this;
     }
-  }]);
 
-  return Navigation;
+    _createClass(Navigation, [{
+        key: 'render',
+        value: function render() {
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'divNav' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'page-wrapper' },
+                    _react2.default.createElement(
+                        'nav',
+                        null,
+                        _react2.default.createElement(
+                            'ul',
+                            { className: 'main-nav' },
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'menuLi' },
+                                _react2.default.createElement(
+                                    _reactRouter.IndexLink,
+                                    { to: '/', activeClassName: 'active-tab' },
+                                    'GALLERIMAGE - Home'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'menuLi' },
+                                _react2.default.createElement(
+                                    _reactRouter.IndexLink,
+                                    { to: '/search', activeClassName: 'active-tab' },
+                                    'Search'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'menuLi' },
+                                _react2.default.createElement(
+                                    _reactRouter.IndexLink,
+                                    { to: '/geolocation',
+                                        activeClassName: 'active-tab' },
+                                    'Geolocation'
+                                )
+                            )
+                        )
+                    )
+                ),
+                this.props.children
+            );
+        }
+    }]);
+
+    return Navigation;
 }(_react2.default.Component);
 
 exports.Navigation = Navigation;
@@ -37840,7 +37817,7 @@ exports.Navigation = Navigation;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.Landing = undefined;
 
@@ -37863,38 +37840,38 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Landing = function (_React$Component) {
-  _inherits(Landing, _React$Component);
+    _inherits(Landing, _React$Component);
 
-  function Landing(props) {
-    _classCallCheck(this, Landing);
+    function Landing(props) {
+        _classCallCheck(this, Landing);
 
-    var _this = _possibleConstructorReturn(this, (Landing.__proto__ || Object.getPrototypeOf(Landing)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Landing.__proto__ || Object.getPrototypeOf(Landing)).call(this, props));
 
-    _this.state = {};
-    return _this;
-  }
-
-  _createClass(Landing, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'page-wrapper' },
-        _react2.default.createElement(
-          'section',
-          null,
-          _react2.default.createElement(
-            'div',
-            { className: 'fetch-container' },
-            _react2.default.createElement(_fetcher.Fetcher, null)
-          )
-        )
-      );
+        _this.state = {};
+        return _this;
     }
-  }]);
 
-  return Landing;
+    _createClass(Landing, [{
+        key: 'render',
+        value: function render() {
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'page-wrapper' },
+                _react2.default.createElement(
+                    'section',
+                    null,
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'fetch-container' },
+                        _react2.default.createElement(_fetcher.Fetcher, null)
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Landing;
 }(_react2.default.Component);
 
 exports.Landing = Landing;
@@ -37907,7 +37884,7 @@ exports.Landing = Landing;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.Fetcher = undefined;
 
@@ -37932,101 +37909,117 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Fetcher = function (_React$Component) {
-  _inherits(Fetcher, _React$Component);
+    _inherits(Fetcher, _React$Component);
 
-  function Fetcher(props) {
-    _classCallCheck(this, Fetcher);
+    function Fetcher(props) {
+        _classCallCheck(this, Fetcher);
 
-    var _this = _possibleConstructorReturn(this, (Fetcher.__proto__ || Object.getPrototypeOf(Fetcher)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Fetcher.__proto__ || Object.getPrototypeOf(Fetcher)).call(this, props));
 
-    _this.state = {
-      error: null,
-      isLoaded: false,
-      photos: [],
-      users: []
-    };
-    return _this;
-  }
+        _this.state = {
+            error: null,
+            isLoaded: false,
+            photos: [],
+            photoInfo: []
+        };
+        return _this;
+    }
 
-  _createClass(Fetcher, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      var _this2 = this;
+    _createClass(Fetcher, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
 
-      fetch("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=1523e8646661fa3f64e6d84462a2274b&tags=dog&text=dog&has_geo=&format=json&nojsoncallback=1&api_sig=05efd965800a96fe5936f0e4a68a2666").then(function (res) {
-        return res.json();
-      }).then(function (result) {
-        _this2.allPhotos = result.photos.photo;
-        _this2.setState({
-          isLoaded: true,
-          photos: result.photos.photo
-        });
-      }, function (error) {
-        _this2.setState({
-          isLoaded: true,
-          error: error
-        });
-      }).then(function (resultusers) {
-        console.log(_this2.allPhotos);
+            this.photoInfoArray = [];
+            fetch("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=06ce4eb5530566dd57098561c9f2fa4f&tags=dog&text=dog&format=json&nojsoncallback=1&api_sig=d30d835510c9a69538b36843af036c80").then(function (res) {
+                return res.json();
+            }).then(function (result) {
 
-        for (var i = 0; i < _this2.allPhotos.length; i++) {
+                _this2.allPhotos = result.photos.photo;
+                _this2.setState({
+                    isLoaded: true,
+                    photos: result.photos.photo
+                });
+            }, function (error) {
+                _this2.setState({
+                    isLoaded: true,
+                    error: error
+                });
+            }).then(function (resultusers) {
 
-          fetch('https://api.flickr.com/services/rest/?method=flickr.people.getInfo&api_key=1523e8646661fa3f64e6d84462a2274b&user_id=' + _this2.allPhotos[i].owner + '&format=json&nojsoncallback=1&auth_token=72157670792491088-fecc059fbd3d44cb&api_sig=8545aa490a24023369ac23219cb1bc90').then(function (res) {
-            return res.json();
-          }).then(function (resultusers) {
+                var identifNumber = 0;
 
-            console.log(resultusers);
+                for (var i = 0; i < _this2.allPhotos.length; i++) {
 
-            _this2.setState({
-              isLoaded: true,
-              users: resultusers
-            });
-          }, function (error) {
-            _this2.setState({
-              isLoaded: true,
-              error: error
-            });
-          });
+                    fetch('https://api.flickr.com/services/rest/?method=flickr.people.getInfo&api_key=06ce4eb5530566dd57098561c9f2fa4f&user_id=' + _this2.allPhotos[i].owner + '&format=json&nojsoncallback=1').then(function (res) {
+                        return res.json();
+                    }).then(function (resultusers) {
+
+                        var desc = Object.values(resultusers.person.description)[0];
+                        var username = Object.values(resultusers.person.username)[0];
+                        var date = Object.values(resultusers.person.photos.firstdatetaken)[0];
+                        _this2.photoInfoArray.push({
+                            "id": identifNumber,
+                            "desc": desc,
+                            "username": username,
+                            "date": date
+                        });
+
+                        identifNumber++;
+                    }, function (error) {
+                        _this2.setState({
+                            isLoaded: true,
+                            error: error
+                        });
+                    });
+                }
+            }).then(console.log('this.photoInfoArray', this.photoInfoArray), console.log('this.photoInfoArray', this.photoInfoArray['0']), console.log('this.photoInfoArray', Object.keys(this.photoInfoArray)),
+
+            //if(dlugosc this.photoInfoArray == 100){this.setState({...})}   - ale jak dobrac sie do tej dlugosci?
+
+
+            this.setState({
+                isLoaded: true,
+                photoInfo: this.photoInfoArray
+            }));
         }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _state = this.state,
+                error = _state.error,
+                isLoaded = _state.isLoaded,
+                photos = _state.photos,
+                photoInfo = _state.photoInfo;
 
-        return resultusers;
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _state = this.state,
-          error = _state.error,
-          isLoaded = _state.isLoaded,
-          photos = _state.photos;
+            if (error) {
+                return _react2.default.createElement(
+                    'div',
+                    null,
+                    'Error: ',
+                    error.message
+                );
+            } else if (!isLoaded) {
+                return _react2.default.createElement(
+                    'div',
+                    null,
+                    'Loading...'
+                );
+            } else {
 
-      if (error) {
-        return _react2.default.createElement(
-          'div',
-          null,
-          'Error: ',
-          error.message
-        );
-      } else if (!isLoaded) {
-        return _react2.default.createElement(
-          'div',
-          null,
-          'Loading...'
-        );
-      } else {
+                this.photoArray = this.state.photos;
+                this.photoInfo = this.state.photoInfo;
 
-        this.photoArray = this.state.photos;
+                return _react2.default.createElement(
+                    'div',
+                    { className: 'slides-container' },
+                    _react2.default.createElement(_carrousel.Carrousel, { photos: this.photoArray, photoInfo: this.photoInfoArray })
+                );
+            }
+        }
+    }]);
 
-        return _react2.default.createElement(
-          'div',
-          { className: 'slides-container' },
-          _react2.default.createElement(_carrousel.Carrousel, { photos: this.photoArray })
-        );
-      }
-    }
-  }]);
-
-  return Fetcher;
+    return Fetcher;
 }(_react2.default.Component);
 
 exports.Fetcher = Fetcher;
@@ -38039,7 +38032,7 @@ exports.Fetcher = Fetcher;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.Carrousel = undefined;
 
@@ -38062,55 +38055,91 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Carrousel = function (_React$Component) {
-  _inherits(Carrousel, _React$Component);
+    _inherits(Carrousel, _React$Component);
 
-  function Carrousel() {
-    _classCallCheck(this, Carrousel);
+    function Carrousel(props) {
+        _classCallCheck(this, Carrousel);
 
-    return _possibleConstructorReturn(this, (Carrousel.__proto__ || Object.getPrototypeOf(Carrousel)).apply(this, arguments));
-  }
+        var _this = _possibleConstructorReturn(this, (Carrousel.__proto__ || Object.getPrototypeOf(Carrousel)).call(this, props));
 
-  _createClass(Carrousel, [{
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      };
-
-      var photos = this.props.photos;
-
-      return _react2.default.createElement(
-        "div",
-        { className: "fetch-result-container" },
-        _react2.default.createElement(
-          _reactSlick2.default,
-          settings,
-          this.props.photos.map(function (item, element) {
-            return _this2.imgid = item.id, _this2.userid = item.owner, _this2.imgfarm = item.farm, _this2.imgserver = item.server, _this2.imgsecret = item.secret, _this2.imgsrc = "https://farm" + _this2.imgfarm + ".staticflickr.com/" + _this2.imgserver + "/" + _this2.imgid + "_" + _this2.imgsecret + ".jpg", _react2.default.createElement(
-              "div",
-              { key: item.id },
-              _react2.default.createElement(
-                "p",
-                { className: "slide-title" },
-                "Dog picture #",
-                element + 1,
-                "/100"
-              ),
-              _react2.default.createElement("img", { src: _this2.imgsrc, alt: "dog image" })
-            );
-          })
-        )
-      );
+        _this.state = {
+            photoInfo: []
+        };
+        return _this;
     }
-  }]);
 
-  return Carrousel;
+    _createClass(Carrousel, [{
+        key: "componentWillReceiveProps",
+        value: function componentWillReceiveProps() {
+            this.setState({
+                photoInfo: this.props.photoInfo
+            });
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            var _this2 = this;
+
+            var settings = {
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            };
+
+            var photos = this.props.photos;
+
+            // console.log('photoInfo', this.props.photoInfo);
+            // console.log('photoInfo.desc', this.props.photoInfo.desc);
+            // console.log('Object.keys(this.props.photoInfo)', Object.keys(this.props.photoInfo));
+            // console.log('Object.values(this.props.photoInfo)', Object.values(this.props.photoInfo));
+
+
+            return _react2.default.createElement(
+                "div",
+                { className: "fetch-result-container" },
+                _react2.default.createElement(
+                    _reactSlick2.default,
+                    settings,
+                    this.props.photos.map(function (item, element) {
+                        return _this2.imgid = item.id, _this2.userid = item.owner, _this2.imgfarm = item.farm, _this2.imgserver = item.server, _this2.imgsecret = item.secret, _this2.author = _this2.props.photoInfo[element], _this2.desc = _this2.props.photoInfo[element], _this2.date = _this2.props.photoInfo[element], _this2.imgsrc = "https://farm" + _this2.imgfarm + ".staticflickr.com/" + _this2.imgserver + "/" + _this2.imgid + "_" + _this2.imgsecret + ".jpg", _react2.default.createElement(
+                            "div",
+                            { key: item.id },
+                            _react2.default.createElement(
+                                "p",
+                                { className: "slide-title" },
+                                "Dog picture #",
+                                element + 1,
+                                "/100"
+                            ),
+                            _react2.default.createElement("img", { src: _this2.imgsrc, alt: "dog image" }),
+                            _react2.default.createElement(
+                                "p",
+                                null,
+                                "Author:",
+                                _this2.author
+                            ),
+                            _react2.default.createElement(
+                                "p",
+                                null,
+                                "Description: ",
+                                _this2.desc
+                            ),
+                            _react2.default.createElement(
+                                "p",
+                                null,
+                                "Date: ",
+                                _this2.date
+                            )
+                        );
+                    })
+                )
+            );
+        }
+    }]);
+
+    return Carrousel;
 }(_react2.default.Component);
 
 exports.Carrousel = Carrousel;
@@ -41509,7 +41538,7 @@ exports = module.exports = __webpack_require__(600)(false);
 
 
 // module
-exports.push([module.i, "/* tiny reset */\nhtml, body {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%; }\n\n* {\n  box-sizing: border-box; }\n\n.row-flex {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center; }\n\n/* body */\nbody {\n  background: black;\n  font-family: \"Roboto Regular\", Roboto, sans-serif;\n  /* navigation */ }\n  body .main-nav {\n    display: flex;\n    flex-direction: row;\n    align-items: right;\n    justify-content: space-around;\n    flex-wrap: wrap;\n    border-bottom: 1px solid #C71E1E;\n    padding: 0; }\n    body .main-nav .menuLi a {\n      display: block;\n      color: white;\n      text-decoration: none;\n      font-size: 25.5px;\n      line-height: 76px; }\n    body .main-nav .menuLiShrink ul {\n      display: flex;\n      flex-direction: row;\n      align-items: right;\n      justify-content: space-between;\n      flex-wrap: wrap; }\n      body .main-nav .menuLiShrink ul li:not(:last-child) {\n        padding-right: 10px; }\n  body .slides-container {\n    color: white; }\n    body .slides-container .slide-title {\n      text-align: center;\n      font-size: 36px; }\n    body .slides-container img {\n      position: relative;\n      margin: 0 auto; }\n  body .fetch-container .fetch-result-container {\n    color: white; }\n\n.notFound {\n  color: #D42B29;\n  font-size: 30px;\n  text-align: center; }\n  .notFound a {\n    line-height: 250px;\n    text-overflow: ellipsis;\n    text-decoration: none;\n    color: white; }\n", ""]);
+exports.push([module.i, "/* tiny reset */\nhtml, body {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%; }\n\n* {\n  box-sizing: border-box; }\n\n.row-flex {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-items: center; }\n\n/* body */\nbody {\n  background: black;\n  font-family: \"Spectral\", sans-serif;\n  /* navigation */ }\n  body .main-nav {\n    display: flex;\n    flex-direction: row;\n    align-items: right;\n    justify-content: space-around;\n    flex-wrap: wrap;\n    border-bottom: 1px solid #C71E1E;\n    padding: 0; }\n    body .main-nav .menuLi a {\n      display: block;\n      color: white;\n      text-decoration: none;\n      font-size: 25.5px;\n      line-height: 76px; }\n    body .main-nav .menuLiShrink ul {\n      display: flex;\n      flex-direction: row;\n      align-items: right;\n      justify-content: space-between;\n      flex-wrap: wrap; }\n      body .main-nav .menuLiShrink ul li:not(:last-child) {\n        padding-right: 10px; }\n  body .slides-container {\n    color: white; }\n    body .slides-container .slide-title {\n      text-align: center;\n      font-size: 36px; }\n    body .slides-container img {\n      position: relative;\n      margin: 0 auto;\n      max-height: 30vmax; }\n  body .fetch-container .fetch-result-container {\n    color: white; }\n\n.notFound {\n  color: #D42B29;\n  font-size: 30px;\n  text-align: center; }\n  .notFound a {\n    line-height: 250px;\n    text-overflow: ellipsis;\n    text-decoration: none;\n    color: white; }\n", ""]);
 
 // exports
 
